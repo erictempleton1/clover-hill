@@ -537,7 +537,7 @@ for(let i=0;i<(small?12:22);i++){const o=randLook();o.pack=rand()<0.2;const r=ma
 for(let i=0;i<(small?4:7);i++){const sg=pick(OPEN),o=randLook();const r=makePerson(o);const toWall=rand()<0.5;
   const p=Object.assign(r,{kind:'idle',x:sg.s*(HALF-0.95),z:sg.zc+R(-1.5,1.5),h:(sg.s>0?Math.PI/2:-Math.PI/2)+(toWall?0:Math.PI),speed:0,phase:0,umb:false,uOpen:0,phone:!toWall,seed:rand()*9});
   if(p.phone)bx(0.07,0.13,0.015,E('#a6d8ff',2.2),0,-0.66,0.07,p.arms[0]);peds.push(p);}
-const player=makePerson({coat:'#191b24',pants:'#121319',skin:'#e0ae86',hair:'#0e0c0c',hs:'hood',acc:'#2be8ff',pack:true,uglow:'#ff2bd6',ucol:'#111216',uclear:true,h:1});
+const player=makePerson({coat:'#3a3d48',pants:'#1c1d24',skin:'#e0ae86',hair:'#0e0c0c',hs:'hood',pack:true,ucol:'#111216',uclear:true,h:1});
 player.phase=0;
 let rain=0,rainLvl=0,wet=0,pud=0;
 function updatePed(p,dt){
